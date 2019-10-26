@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".main.AboutAppActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Tentang Aplikasi"
+                android:textColor="#000"
+                android:textSize="@dimen/_20sdp" />
+
+        <View
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="#b3b3b3" />
+
+        <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/encryption_logo" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Enkripsi Note Menggunakan Algoritma RSA"
+                android:textColor="#000"
+                android:textSize="@dimen/_12sdp" />
+
+        <TextView
+                android:id="@+id/aaa_tv_version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Versi 3.0.1"
+                android:textColor="#000"
+                android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/aaa_tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textColorLink="#55acee"
+                    android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                    android:id="@+id/aaa_tv_instagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textColorLink="#55acee"
+                    android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                    android:id="@+id/aaa_tv_twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textColorLink="#55acee"
+                    android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="LOGOUT"
+                android:textSize="@dimen/_16sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".main.FirstScreenActivity">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_margin="@dimen/_20sdp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_10sdp">
+
+            <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/encryption_logo"/>
+
+            <!--Welcome text-->
+            <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selamat Datang"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="#000"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Silahkan lengkapi data untuk memulai aplikasi"/>
+
+            <!--Field username-->
+            <LinearLayout
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="#000"
+                        android:layout_weight="2"/>
+
+                <EditText
+                        android:id="@+id/fsa_edt_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sdp"
+                        android:inputType="text"
+                        android:textColor="#000"
+                        android:hint="Masukkan username"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kata Sandi"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="#000"
+                        android:layout_weight="2"/>
+
+                <EditText
+                        android:id="@+id/fsa_edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_12sdp"
+                        android:inputType="textPassword"
+                        android:textColor="#000"
+                        android:hint="Masukkan kata sandi"/>
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/fsa_btn_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="Mulai Aplikasi"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

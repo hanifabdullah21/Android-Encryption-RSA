@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.singpaulee.tutorialrsaencryption">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/encryption_logo"
+            android:roundIcon="@drawable/encryption_logo"
+            android:supportsRtl="true"
+            android:label="Note Encryption RSA"
+            android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity
+                android:name=".main.DashboardActivity"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:label="Cryptonote"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".main.AddNoteActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name=".main.FirstScreenActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.DetailNoteActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".main.UpdateNoteActivity"
+                  android:windowSoftInputMode="adjustResize"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".main.AboutAppActivity"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".main.EditProfilActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

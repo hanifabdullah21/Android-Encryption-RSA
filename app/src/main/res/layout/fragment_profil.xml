@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.ProfilFragment">
+
+    <RelativeLayout
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_60sdp">
+
+        <ImageView
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_250sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/note"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/_18sdp"
+                  android:text="PROFIL"
+                  android:textColor="#000"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="@dimen/_7sdp"/>
+
+        <ImageView
+                android:id="@+id/pf_person"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:src="@drawable/ic_person"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:layout_centerHorizontal="true"/>
+
+        <TextView
+                android:id="@+id/pf_tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="Hanif Abdullah"
+                android:textSize="@dimen/_20sdp"
+                android:layout_below="@id/pf_person"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+        <TextView
+                android:id="@+id/pf_tv_edit_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/pf_tv_username"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorPrimary"
+                android:text="Edit Profil"/>
+
+        <TextView
+                android:id="@+id/pf_tv_tentang_aplikasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/pf_tv_edit_profil"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#486aff"
+                android:text="Tentang Aplikasi"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

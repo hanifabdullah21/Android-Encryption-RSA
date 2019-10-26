@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".main.DetailNoteActivity">
+
+    <RelativeLayout
+            android:id="@+id/dna_line_button"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+        <ImageButton
+                android:layout_alignParentLeft="true"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/ic_delete"
+                android:background="@drawable/background_button_delete"
+                android:id="@+id/dna_btn_delete"/>
+
+        <ImageButton
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/ic_edit"
+                android:background="@drawable/background_button"
+                android:id="@+id/dna_btn_edit"/>
+
+        <ImageButton
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/ic_copy"
+                android:layout_toLeftOf="@id/dna_btn_edit"
+                android:background="@drawable/background_button"
+                android:id="@+id/dna_btn_copy"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:text="DECRYPT"
+                android:textColor="#FFF"
+                android:layout_toRightOf="@id/dna_btn_delete"
+                android:background="@drawable/background_button"
+                android:layout_toLeftOf="@id/dna_btn_copy"
+                android:id="@+id/dna_btn_decrypt"/>
+
+        <Button
+                android:id="@+id/dna_btn_encrypt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:text="ENCRYPT"
+                android:textColor="#FFF"
+                android:layout_toRightOf="@id/dna_btn_delete"
+                android:background="@drawable/background_button"
+                android:layout_toLeftOf="@id/dna_btn_copy"
+                android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/dna_line_button">
+
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_10sdp">
+
+                <TextView
+                        android:id="@+id/dna_tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        tools:text="Judulnya kira kira segini panjangnay tapi mosok sih ahahahahah"/>
+
+                <TextView
+                        android:id="@+id/dna_tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Sabtu, 23 Mei 2019"/>
+
+                <TextView
+                        android:id="@+id/dna_tv_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="#000"
+                        tools:text="Hahahahahahahah ahashca hsc ajsc ajs cajs cja scjas cja scja cja sjca jc ajhscbajhscbajhcajhc ajhchja"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_animation"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                app:lottie_fileName="encrypt_loading.json"
+                app:lottie_loop="true"/>
+    </FrameLayout>
+
+</RelativeLayout>
